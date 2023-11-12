@@ -10,9 +10,9 @@
 - __selected_feat__: excluded features with contant values, low correlation with response (<0.1) or high correlation with others (>0.7),
    same structure as all_feat
 
-  For resampling: call `adjust_imb.py`
+  For resampling: call `model_fitting/adjust_imb.py`
   ```
-  from adjust_imb import adjust imb
+  from adjust_imb import adjust_imb
   X_train_adj, y_train_adj = adjust_imb(X_train, y_train)
   ```
 # valid
