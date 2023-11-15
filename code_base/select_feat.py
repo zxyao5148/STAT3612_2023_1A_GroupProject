@@ -11,7 +11,7 @@ def select_feat(X, y, n_splits=10, n_features=100):
     f_score_sums = dict.fromkeys(X.columns, 0.0)
     kf = KFold(n_splits=n_splits, shuffle=True, random_state=1)
     for train_index, test_index in kf.split(X):
-        X_batch, y_batch = X.iloc[train_index], y.iloc[train_index]
+        X_batch, y_batch = X.iloc[test_index], y.iloc[test_index]
         f_values, p_values = f_classif(X_batch, y_batch)
         for i, feature in enumerate(X.columns):
             f_score_sums[feature] += f_values[i]
