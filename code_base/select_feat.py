@@ -2,19 +2,17 @@
 
 # sample usage:
 #from select_feat import select_feat
-#X_train_selected = select_feat(X_train, y_train)
+#X_train_selected = select_feat(X_train, y_train, method='p_value')
 
 from sklearn.feature_selection import f_classif
-from sklearn.model_selection import KFold
 
-def select_feat(X, y, n_splits=10, n_features=100):
-    f_score_sums = dict.fromkeys(X.columns, 0.0)
-    kf = KFold(n_splits=n_splits, shuffle=True, random_state=1)
-    for train_index, test_index in kf.split(X):
-        X_batch, y_batch = X.iloc[test_index], y.iloc[test_index]
-        f_values, p_values = f_classif(X_batch, y_batch)
-        for i, feature in enumerate(X.columns):
-            f_score_sums[feature] += f_values[i]
-    f_score_avgs = {feature: f_score_sum / n_splits for feature, f_score_sum in f_score_sums.items()}
-    top_features = sorted(f_score_avgs, key=f_score_avgs.get, reverse=True)[:n_features]
-    return X[top_features]
+def select_feat(X, y, method='f_score', n_features=100, p_value_threshold=0.05):
+    f_values, p_values = f_classif(X, y)
+    if method == 'f_score':
+        f_scores = dict(zip(X.columns, f_values))
+        top_features = sorted(f_scores, key=f_scores.get, reverse=True)[:n_features]
+        return X[top_features]
+    elif method == 'p_value':
+        p_values_dict = dict(zip(X.columns, p_values))
+        selected_features = [feature for feature, p_value in p_values_dict.items() if p_value < p_value_threshold]
+        return X[selected_features]
