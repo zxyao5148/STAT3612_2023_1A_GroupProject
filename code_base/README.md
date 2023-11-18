@@ -1,5 +1,5 @@
 # Shared Code Base
-functions to implement feature selection and address class imblance
+Functions to implement feature selection, engineering, and address class imblance.
 
 1. addressing class imblance:
 ```
