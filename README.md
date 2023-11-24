@@ -13,5 +13,5 @@ Group project for HKU course STAT3612 Statistical Machine Learning (2023 Section
 
 ## Timeline
 - Proposal: 5 November, 2023  ✅
-- Presentation: 24 November, 2023  🔴
+- Presentation: 24 November, 2023  ✅
 - Report: 7 December, 2023  🔴
