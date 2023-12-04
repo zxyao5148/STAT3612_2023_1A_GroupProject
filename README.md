@@ -1,5 +1,11 @@
 # STAT3612_2023_1A_GroupProject
-Group project for HKU course STAT3612 Statistical Machine Learning (2023 Section 1A)
+Group project for HKU course STAT3612 Statistical Machine Learning (2023 Section 1A)  
+Refer to the corresponding [kaggle competition](https://www.kaggle.com/competitions/30-day-all-cause-hospital-readmission-prediction) for more details.
+
+## Timeline
+- Proposal: 5 November, 2023  ✅
+- Presentation: 24 November, 2023  ✅
+- Report: 7 December, 2023  🔴
 
 ## Group Member
 
@@ -11,7 +17,6 @@ Group project for HKU course STAT3612 Statistical Machine Learning (2023 Section
 | Huang Yining | 3035662522 | YuniGE  |
 | Huang Zixun | 3035844522 | Jessie31111 |
 
-## Timeline
-- Proposal: 5 November, 2023  ✅
-- Presentation: 24 November, 2023  ✅
-- Report: 7 December, 2023  🔴
+## Instruction
+Please refer to the following steps to evaluate our best-performing model:  
+...
