@@ -1,5 +1,5 @@
 # STAT3612_2023_1A_GroupProject
-Group project for HKU course STAT3612 Statistical Machine Learning (2023 Section 1A, Coordinator: Dr. Yu Lequan)  
+Group project for HKU course STAT3612 Statistical Machine Learning (2023 1A, Coordinator: Dr. Yu Lequan)  
 Refer to the corresponding kaggle competition for more details: [30-day All-Cause Hospital Readmission Prediction](https://www.kaggle.com/competitions/30-day-all-cause-hospital-readmission-prediction)
 
 ## Timeline
