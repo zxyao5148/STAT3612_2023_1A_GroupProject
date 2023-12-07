@@ -5,7 +5,7 @@ Refer to the corresponding kaggle competition for more details: [30-day All-Caus
 ## Timeline
 - ✅ [Proposal](https://github.com/zxyao5148/STAT3612_2023_1A_GroupProject/blob/main/proposal.pdf): 5 November, 2023  
 - ✅ [Presentation](https://github.com/zxyao5148/STAT3612_2023_1A_GroupProject/blob/main/presentation.pdf): 24 November, 2023
-- 🔴 Report: 7 December, 2023  
+- ✅ [Report](https://github.com/zxyao5148/STAT3612_2023_1A_GroupProject/blob/main/presentation.pdf): 7 December, 2023  
 
 ## Group Member
 
