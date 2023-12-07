@@ -23,7 +23,7 @@ Refer to the corresponding kaggle competition for more details: [30-day All-Caus
 ## Testing Instruction
 Please refer to the following steps to evaluate our best-performing model:  
 1. Download all the files and make sure that the directories are in original order.
-2. Go to `model_fitting/bayes_optim.ipynb`. Followings are description for each code chunck.
+2. Go to `model_fitting/best-model.ipynb`. Followings are description for each code chunck.
    - the first code chunck is to load libraries 
    - the second code chunck is to load processed data, including latest, mean, sd, min, and max of the time series data (check `data_processing/preprocess.ipynb` for details)
    - the third code chunck is to separate features and response
